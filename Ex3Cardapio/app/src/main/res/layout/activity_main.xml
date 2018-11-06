@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="459dp"
+        android:layout_height="150dp"
+        android:src="@drawable/lanchonete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="359dp"
+        android:layout_marginTop="8dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="27">
+
+
+            <!-- LINHA 0 E 1 -->
+            <Button
+                android:id="@+id/bt1"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_rowSpan="2"
+                android:layout_gravity="fill_vertical"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="0dp"
+                android:background="#ff0000"
+                android:text="1"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pizza1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:text="À moda do freguês"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/ingredientes1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:textSize="18dp"
+                android:text="Escolha 5 ingredientes" />
+
+            <!-- LINHA 2 E 3 -->
+            <Button
+                android:id="@+id/bt2"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_rowSpan="2"
+                android:layout_gravity="fill_vertical"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="0dp"
+                android:background="#ff0000"
+                android:text="2"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pizza2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:text="À moda da casa"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/ingredientes2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:textSize="18dp"
+                android:text="Calabreza, catupiri, milho, frango, bacom, cebola, tomate, azeitona, orégano, mussarela, provolone" />
+
+            <!-- LINHA 5 E 6 -->
+            <Button
+                android:id="@+id/bt3"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_column="0"
+                android:layout_rowSpan="2"
+                android:layout_gravity="fill_vertical"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="0dp"
+                android:background="#ff0000"
+                android:text="3"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pizza3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_column="1"
+                android:text="Quatro queijos"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/ingredientes3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="6"
+                android:layout_column="1"
+                android:textSize="18dp"
+                android:text="Mussarela, catupiry, provolone, parmesão" />
+
+            <!-- LINHA 7 E 8 -->
+            <Button
+                android:id="@+id/bt4"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_row="7"
+                android:layout_column="0"
+                android:layout_rowSpan="2"
+                android:layout_gravity="fill_vertical"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="0dp"
+                android:background="#ff0000"
+                android:text="4"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pizza4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="7"
+                android:layout_column="1"
+                android:text="Calabreza apimentada"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/ingredientes4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="8"
+                android:layout_column="1"
+                android:textSize="18dp"
+                android:text="Calabreza, pimenta calabreza, mussarela, milho, azeitona, tomate, catupiry" />
+
+            <!-- LINHA 9 E 10 -->
+            <Button
+                android:id="@+id/bt5"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_row="9"
+                android:layout_column="0"
+                android:layout_rowSpan="2"
+                android:layout_gravity="fill_vertical"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="0dp"
+                android:background="#ff0000"
+                android:text="5"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pizza5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="9"
+                android:layout_column="1"
+                android:text="Portuguesa"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/ingredientes5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="10"
+                android:layout_column="1"
+                android:textSize="18dp"
+                android:text="Calabreza, ovo, tomate, pimentão, cebola, milho, ervilha, azeitona, orégano" />
+
+            <!-- LINHA 11 E 12 -->
+            <Button
+                android:id="@+id/bt6"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_row="11"
+                android:layout_column="0"
+                android:layout_rowSpan="2"
+                android:layout_gravity="fill_vertical"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="0dp"
+                android:background="#ff0000"
+                android:text="6"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pizza6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="11"
+                android:layout_column="1"
+                android:text="Brasileira"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/ingredientes6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="12"
+                android:layout_column="1"
+                android:textSize="18dp"
+                android:text="Presunto, mussarela, bacon, catupiry, tomate, cebola, orégano, milho, azeitona" />
+
+            <!-- LINHA 13 E 14-->
+            <Button
+                android:id="@+id/bt7"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_row="13"
+                android:layout_column="0"
+                android:layout_rowSpan="2"
+                android:layout_gravity="fill_vertical"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="0dp"
+                android:background="#ff0000"
+                android:text="7"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pizza7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="13"
+                android:layout_column="1"
+                android:text="Bacon"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/ingredientes7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="14"
+                android:layout_column="1"
+                android:textSize="18dp"
+                android:text="Bacon, mussarela, tomate, orégano, azeitona, milho" />
+
+            <!-- LINHA 15 E 16 -->
+            <Button
+                android:id="@+id/bt8"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_row="15"
+                android:layout_column="0"
+                android:layout_rowSpan="2"
+                android:layout_gravity="fill_vertical"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="0dp"
+                android:background="#ff0000"
+                android:text="8"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pizza8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="15"
+                android:layout_column="1"
+                android:text="Frango"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/ingredientes8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="16"
+                android:layout_column="1"
+                android:textSize="18dp"
+                android:text="Frango, presunto, mussarela, tomate, milho, azeitona, catupiry" />
+
+            <!-- LINHA 17 E 18-->
+            <Button
+                android:id="@+id/bt9"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_row="17"
+                android:layout_column="0"
+                android:layout_rowSpan="2"
+                android:layout_gravity="fill_vertical"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="0dp"
+                android:background="#ff0000"
+                android:text="9"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pizza9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="17"
+                android:layout_column="1"
+                android:text="Vegetariana"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/ingredientes9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="18"
+                android:layout_column="1"
+                android:textSize="18dp"
+                android:text="Mussarela, tomate, milho, ervilha, azeitona, alho poró, alecrim, pimentão, espinafre, cebola, manjericão" />
+
+            <!-- LINHA 19 E 20 -->
+            <Button
+                android:id="@+id/bt10"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_row="19"
+                android:layout_column="0"
+                android:layout_rowSpan="2"
+                android:layout_gravity="fill_vertical"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="0dp"
+                android:background="#ff0000"
+                android:text="10"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pizza10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="19"
+                android:layout_column="1"
+                android:text="Carnívora"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/ingredientes10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="20"
+                android:layout_column="1"
+                android:textSize="18dp"
+                android:text="Presunto, bacon, calabreza, salaminho, mussarela, tomate, orégano, cebola" />
+        </GridLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>
